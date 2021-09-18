@@ -1,0 +1,27 @@
+html 
+    head 
+        title 
+        link(rel="stylesheet", href="style.css")
+    body
+        nav(class = "navContent")
+            ui(class ="navbar")
+                li 
+                    a(href="/") 
+                        button(type = 'submit') Home  
+        
+        form(action="/register", method="post", id='registerContainer')  
+            div 
+                h1 Register
+            div
+                label(for="name") Full Name
+                input(type="text" id='name' name='name' required) 
+            div
+                label(for="email" ) Email Id
+                input(type="email" id = 'email' name = 'email' required) 
+            div
+                label(for="password") Password
+                input(type= "password" id = 'password' name = 'password' required) 
+            div 
+                button(type = 'submit' id = "submit") Submit 
+                a(href="/login") Log In
+            

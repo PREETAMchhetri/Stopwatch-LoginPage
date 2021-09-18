@@ -1,0 +1,26 @@
+html 
+    head 
+        title
+        link(rel="stylesheet", href="/style2.css")   
+    body 
+        //- img(src="/Project4/img.jpg", alt="")
+        nav(class = "navContent")
+            ui(class ="navbar")
+                li 
+                    a(href="/register") 
+                        button(type = 'submit') Register
+                    
+                li
+                    a(href="/login")  
+                        button(type = 'submit') Log In 
+                
+        div(id="contain")
+            div(class="container" id="container") 
+                span(id = "timer") 00:00:00
+            div(class="Count")
+                button(id = "start") Start
+
+                button(id = "stop") Stop
+
+                button(id = "reset") Reset
+        script(src="/index.js") 
